@@ -1,0 +1,335 @@
+{
+  "clinics": {
+    "clinic1": {
+      "name": "서울 한의원",
+      "address": "서울시 강남구 테헤란로 123",
+      "phone": "02-1234-5678",
+      "createdAt": "2024-01-01T00:00:00Z",
+
+      "patients": {
+        "patient1": {
+          "name": "김민수",
+          "phone": "010-1234-5678",
+          "birth": "1985-03-15",
+          "gender": "남성",
+          "address": "서울시 강남구",
+          "points": 150,
+          "visits": 5,
+          "lastVisit": "2024-09-28T10:00:00Z",
+          "createdAt": "2024-01-15T00:00:00Z"
+        },
+        "patient2": {
+          "name": "이지은",
+          "phone": "010-2345-6789",
+          "birth": "1990-07-22",
+          "gender": "여성",
+          "address": "서울시 서초구",
+          "points": 200,
+          "visits": 8,
+          "lastVisit": "2024-09-30T14:00:00Z",
+          "createdAt": "2024-02-01T00:00:00Z"
+        },
+        "patient3": {
+          "name": "박준호",
+          "phone": "010-3456-7890",
+          "birth": "1978-11-05",
+          "gender": "남성",
+          "address": "서울시 송파구",
+          "points": 80,
+          "visits": 3,
+          "lastVisit": "2024-09-25T16:00:00Z",
+          "createdAt": "2024-03-10T00:00:00Z"
+        },
+        "patient4": {
+          "name": "정수아",
+          "phone": "010-4567-8901",
+          "birth": "1995-05-18",
+          "gender": "여성",
+          "address": "서울시 마포구",
+          "points": 50,
+          "visits": 2,
+          "lastVisit": "2024-09-20T11:00:00Z",
+          "createdAt": "2024-04-05T00:00:00Z"
+        }
+      },
+
+      "carePlans": {
+        "plan1": {
+          "patientId": "patient1",
+          "title": "요통 집중 관리 프로그램",
+          "description": "만성 요통 개선을 위한 4주 케어 플랜",
+          "status": "active",
+          "quests": [
+            {
+              "id": "quest1",
+              "title": "매일 아침 스트레칭 10분",
+              "completed": true,
+              "completedAt": "2024-09-28T08:00:00Z"
+            },
+            {
+              "id": "quest2",
+              "title": "침 치료 주 2회 받기",
+              "completed": true,
+              "completedAt": "2024-09-29T15:00:00Z"
+            },
+            {
+              "id": "quest3",
+              "title": "한약 복용 아침/저녁",
+              "completed": false
+            },
+            {
+              "id": "quest4",
+              "title": "자세 교정 운동 하루 3회",
+              "completed": false
+            }
+          ],
+          "progress": 50,
+          "createdAt": "2024-09-15T00:00:00Z"
+        },
+        "plan2": {
+          "patientId": "patient2",
+          "title": "불면증 개선 케어",
+          "description": "수면의 질 향상을 위한 2주 집중 관리",
+          "status": "active",
+          "quests": [
+            {
+              "id": "quest5",
+              "title": "취침 2시간 전 스마트폰 사용 금지",
+              "completed": true,
+              "completedAt": "2024-09-30T22:00:00Z"
+            },
+            {
+              "id": "quest6",
+              "title": "매일 족욕 15분",
+              "completed": true,
+              "completedAt": "2024-09-30T21:30:00Z"
+            },
+            {
+              "id": "quest7",
+              "title": "이완 차 마시기 (캐모마일/라벤더)",
+              "completed": true,
+              "completedAt": "2024-09-30T20:00:00Z"
+            }
+          ],
+          "progress": 100,
+          "createdAt": "2024-09-20T00:00:00Z"
+        },
+        "plan3": {
+          "patientId": "patient3",
+          "title": "소화불량 개선 프로그램",
+          "description": "위장 기능 개선을 위한 3주 케어",
+          "status": "completed",
+          "quests": [
+            {
+              "id": "quest8",
+              "title": "식후 30분 걷기",
+              "completed": true,
+              "completedAt": "2024-09-24T13:00:00Z"
+            },
+            {
+              "id": "quest9",
+              "title": "맵고 기름진 음식 피하기",
+              "completed": true,
+              "completedAt": "2024-09-25T19:00:00Z"
+            }
+          ],
+          "progress": 100,
+          "completedAt": "2024-09-25T00:00:00Z",
+          "createdAt": "2024-09-05T00:00:00Z"
+        }
+      },
+
+      "products": {
+        "product1": {
+          "name": "프리미엄 홍삼 진액",
+          "description": "6년근 홍삼으로 만든 고품질 진액 (30포)",
+          "price": 89000,
+          "points": 180,
+          "stock": 15,
+          "category": "건강식품",
+          "imageUrl": "https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=홍삼진액",
+          "createdAt": "2024-01-10T00:00:00Z"
+        },
+        "product2": {
+          "name": "녹용 보약",
+          "description": "러시아산 녹용을 사용한 고급 보약 (100환)",
+          "price": 250000,
+          "points": 500,
+          "stock": 3,
+          "category": "한약",
+          "imageUrl": "https://via.placeholder.com/300x300/4ECDC4/FFFFFF?text=녹용보약",
+          "createdAt": "2024-01-15T00:00:00Z"
+        },
+        "product3": {
+          "name": "쑥뜸 세트",
+          "description": "가정용 쑥뜸 10회분 + 쑥뜸기",
+          "price": 35000,
+          "points": 70,
+          "stock": 0,
+          "category": "자가관리",
+          "imageUrl": "https://via.placeholder.com/300x300/95E1D3/FFFFFF?text=쑥뜸세트",
+          "createdAt": "2024-02-01T00:00:00Z"
+        },
+        "product4": {
+          "name": "대추차",
+          "description": "유기농 대추로 만든 건강차 (50티백)",
+          "price": 18000,
+          "points": 36,
+          "stock": 25,
+          "category": "건강차",
+          "imageUrl": "https://via.placeholder.com/300x300/F38181/FFFFFF?text=대추차",
+          "createdAt": "2024-02-10T00:00:00Z"
+        },
+        "product5": {
+          "name": "침구 세트 (가정용)",
+          "description": "일회용 침 50개 + 소독 솜 + 보관함",
+          "price": 45000,
+          "points": 90,
+          "stock": 8,
+          "category": "자가관리",
+          "imageUrl": "https://via.placeholder.com/300x300/AA96DA/FFFFFF?text=침구세트",
+          "createdAt": "2024-03-01T00:00:00Z"
+        },
+        "product6": {
+          "name": "어혈 개선 환",
+          "description": "혈액순환 개선을 위한 한약환 (60환)",
+          "price": 65000,
+          "points": 130,
+          "stock": 12,
+          "category": "한약",
+          "imageUrl": "https://via.placeholder.com/300x300/FCBAD3/FFFFFF?text=어혈환",
+          "createdAt": "2024-03-15T00:00:00Z"
+        }
+      },
+
+      "purchases": {
+        "purchase1": {
+          "productId": "product1",
+          "productName": "프리미엄 홍삼 진액",
+          "patientId": "patient1",
+          "points": 180,
+          "status": "pending",
+          "createdAt": "2024-10-01T09:30:00Z"
+        },
+        "purchase2": {
+          "productId": "product4",
+          "productName": "대추차",
+          "patientId": "patient2",
+          "points": 36,
+          "status": "approved",
+          "createdAt": "2024-09-30T14:20:00Z",
+          "approvedAt": "2024-10-01T10:00:00Z"
+        },
+        "purchase3": {
+          "productId": "product2",
+          "productName": "녹용 보약",
+          "patientId": "patient3",
+          "points": 500,
+          "status": "rejected",
+          "rejectionReason": "재고 부족으로 인한 일시적 거부",
+          "createdAt": "2024-09-29T11:00:00Z",
+          "rejectedAt": "2024-09-29T15:00:00Z"
+        },
+        "purchase4": {
+          "productId": "product5",
+          "productName": "침구 세트 (가정용)",
+          "patientId": "patient4",
+          "points": 90,
+          "status": "completed",
+          "createdAt": "2024-09-28T16:00:00Z",
+          "approvedAt": "2024-09-28T18:00:00Z",
+          "completedAt": "2024-09-29T10:00:00Z"
+        },
+        "purchase5": {
+          "productId": "product6",
+          "productName": "어혈 개선 환",
+          "patientId": "patient1",
+          "points": 130,
+          "status": "pending",
+          "createdAt": "2024-10-02T08:15:00Z"
+        }
+      },
+
+      "posts": {
+        "post1": {
+          "title": "요통에 좋은 스트레칭 방법",
+          "content": "오랜 시간 앉아있는 분들을 위한 간단한 요추 스트레칭을 소개합니다.\n\n1. 고양이-소 자세: 등을 둥글게 말았다 펴기를 10회 반복\n2. 무릎 당기기: 누워서 한쪽 무릎을 가슴 쪽으로 당기고 30초 유지\n3. 비틀기: 다리를 꼬아 반대편으로 비틀며 척추 이완\n\n하루 2-3회, 각 동작당 30초씩 진행해보세요!",
+          "authorId": "patient1",
+          "authorName": "김민수",
+          "likeCount": 12,
+          "commentCount": 3,
+          "createdAt": "2024-09-28T15:30:00Z",
+          "comments": {
+            "comment1": {
+              "content": "오늘부터 따라해봐야겠어요! 감사합니다 😊",
+              "authorId": "patient2",
+              "authorName": "이지은",
+              "createdAt": "2024-09-28T16:00:00Z"
+            },
+            "comment2": {
+              "content": "저도 요통이 심했는데 이 스트레칭 도움 많이 됐어요!",
+              "authorId": "patient3",
+              "authorName": "박준호",
+              "createdAt": "2024-09-28T17:30:00Z"
+            },
+            "comment3": {
+              "content": "원장님께 문의했는데 추천하셨던 방법이네요 👍",
+              "authorId": "patient4",
+              "authorName": "정수아",
+              "createdAt": "2024-09-29T10:00:00Z"
+            }
+          }
+        },
+        "post2": {
+          "title": "불면증 개선 후기",
+          "content": "2주간 케어 플랜 따라하니 정말 효과가 있네요!\n\n특히 족욕이 정말 도움이 많이 됐어요. 처음엔 귀찮았는데 매일 하다보니 루틴이 되고, 잠들기도 훨씬 수월해졌습니다.\n\n한약도 먹고 있는데 깊은 잠을 자게 되는 것 같아요. 같은 고민 있으신 분들께 추천드립니다!",
+          "authorId": "patient2",
+          "authorName": "이지은",
+          "likeCount": 8,
+          "commentCount": 2,
+          "createdAt": "2024-09-30T20:00:00Z",
+          "comments": {
+            "comment4": {
+              "content": "저도 불면증이 심한데 족욕 시도해봐야겠어요!",
+              "authorId": "patient4",
+              "authorName": "정수아",
+              "createdAt": "2024-09-30T21:00:00Z"
+            },
+            "comment5": {
+              "content": "좋은 정보 감사합니다. 몇 시에 족욕하시나요?",
+              "authorId": "patient1",
+              "authorName": "김민수",
+              "createdAt": "2024-10-01T09:00:00Z"
+            }
+          }
+        },
+        "post3": {
+          "title": "한의원 주차 안내",
+          "content": "한의원 건물 지하 1층에 주차 가능합니다.\n\n방문 시 안내 데스크에 차량 번호 말씀해주시면 2시간 무료 주차 처리해드려요. 그 이후는 30분당 1000원입니다.\n\n참고하세요!",
+          "authorId": "patient3",
+          "authorName": "박준호",
+          "likeCount": 5,
+          "commentCount": 1,
+          "createdAt": "2024-09-25T11:00:00Z",
+          "comments": {
+            "comment6": {
+              "content": "오! 몰랐는데 유용한 정보네요",
+              "authorId": "patient2",
+              "authorName": "이지은",
+              "createdAt": "2024-09-25T14:00:00Z"
+            }
+          }
+        },
+        "post4": {
+          "title": "홍삼진액 효과 궁금합니다",
+          "content": "제품 구매하려고 하는데 실제로 드셔보신 분 계신가요?\n\n피로 회복에 도움이 된다고 들었는데 효과가 어떤지, 복용 방법은 어떻게 하시는지 궁금합니다.",
+          "authorId": "patient4",
+          "authorName": "정수아",
+          "likeCount": 3,
+          "commentCount": 0,
+          "createdAt": "2024-10-01T13:00:00Z"
+        }
+      }
+    }
+  }
+}

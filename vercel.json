@@ -1,0 +1,6 @@
+{
+  "buildCommand": "flutter build web --release",
+  "outputDirectory": "build/web",
+  "framework": null,
+  "installCommand": "if cd /vercel/.flutter 2>/dev/null; then git pull && cd - ; else git clone https://github.com/flutter/flutter.git /vercel/.flutter && cd -; fi && /vercel/.flutter/bin/flutter doctor && /vercel/.flutter/bin/flutter config --enable-web && /vercel/.flutter/bin/flutter pub get"
+}
